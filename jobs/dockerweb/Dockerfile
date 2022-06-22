@@ -14,6 +14,6 @@ RUN apt-get update && apt-get install -y \
         && docker-php-ext-configure pdo_mysql --with-pdo-mysql=mysqlnd \
         && apt-get install vim -y
 
-COPY  . /var/jenkins_home/workspace/
-WORKDIR /var/jenkins_home/workspace/
+COPY  . /var/www/html/
+WORKDIR /var/www/html/
 
